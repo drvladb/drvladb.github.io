@@ -64,9 +64,9 @@ $(document).ready(function() {
    if(window.location.search == "?easy")
       pipeheight = 200;
    if(window.location.search == "?hax"){
-      var pipe_gap = 90,
-	flap_thresh = 0;
-
+      var pipe_gap = 90;
+      var flap_thresh = 0;
+      alert("hax en");
 	function targetHeight() {
 		var p = pipes[0];
 		if (p === undefined) {
