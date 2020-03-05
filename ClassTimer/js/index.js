@@ -1,34 +1,16 @@
-//End of day timer
-
-var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = today.getFullYear();
-today = mm + '/' + dd + '/' + yyyy;
-
-noschool = ["3/13/2020", "4/10/2020", "4/11/2020", "4/12/2020", "4/13/2020","4/14/2020", "4/15/2020", "4/16/2020",  "4/17/2020", "5/25/2020", "5/25/2020"]
-delayedstart = ["5/25/2020"]
-
-if (noschool.includes(today)){
- console.log("There is no school today")
-}
-
-if (delayedstart.includes(today)){
- console.log("School today starts 2 hours late")
-}
-
-var todaydt = new Date();
-if(todatdt.getDay() == 6 || todatdt.getDay() == 0){
-  console.log("Today is weekend")
-}
-
-var countDownDate = new Date(today + " 14:30:00").getTime();
-
-// Update the count down every 1 second
 var x = setInterval(function() {
+  // Set the date we're counting down to
+console.log("I exist");
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, '0');
+  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  var yyyy = today.getFullYear();
+  today = mm + '/' + dd + '/' + yyyy;
 
   // Get today's date and time
   var now = new Date().getTime();
+
+  var countDownDate = new Date(today + " 02:30:00 PM").getTime();
 
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
@@ -40,12 +22,28 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Output the result in an element with id="demo"
-  document.getElementById("eotimer").innerHTML = days + "d " + hours + "h "
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
   // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("eotimer").innerHTML = "School has ended!";
+    document.getElementById("demo").innerHTML = "N/A";
   }
 }, 1000);
+
+//More info stuff
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}

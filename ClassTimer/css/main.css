@@ -99,21 +99,57 @@ textarea {
    ========================================================================== */
    p {
      text-align: center;
-     font-size: 55px;
+     font-size: 40px;
      margin-top: 0px;
    }
    h1 {
      text-align: center;
-     font-size: 60px;
+     font-size: 65px;
+     margin-top: 0px;
+   }
+   h2 {
+     text-align: center;
+     font-size: 55px;
      margin-top: 0px;
    }
    body {
-     background-color: rgba(191, 191, 191, 0);
+     background-color: rgba(191, 191, 191);
    }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+   /*collapsible data*/
+   .collapsible {
+     background-color: rgb(191, 191, 191);
+     color: black;
+     cursor: pointer;
+     padding: 0px;
+     width: 100%;
+     border: none;
+     text-align: center;
+     outline: none;
+     font-size: 20px;
+     position: relative;
+     bottom: -345px;
+   }
 
+   .active, .collapsible:hover {
+     background-color: rgb(191, 191, 191);
+   }
+
+   .content {
+     padding: 0 18px;
+     background-color: rgb(191, 191, 191);
+     display: none;
+     overflow: hidden;
+     /*position: fixed;
+     bottom: -20px;*/
+     transform: translate(0%, 340%);
+   }
+
+   .extratext {
+     font-size: 20px
+   }
 /*
  * Hide visually and from screen readers
  */

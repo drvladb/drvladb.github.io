@@ -40,12 +40,12 @@ var x = setInterval(function() {
     var fmeta = "11:08:00 AM";
   }
   if (today_secs > 40080 & today_secs < 43260){
-    var meta = "Fifth Period (Lunch)"
+    var meta = "Fifth Period"
     var countDownDate = new Date(today + " 12:01:00 PM").getTime();
-    var fmeta = "11:51:00 PM";
+    var fmeta = "12:01:00 PM";
   }
   if (today_secs > 43260 & today_secs < 45840){
-    var meta = "Sixth Period"
+    var meta = "Sixth Period (Lunch)"
     var countDownDate = new Date(today + " 12:44:00 PM").getTime();
     var fmeta = "12:44:00 PM";
   }
