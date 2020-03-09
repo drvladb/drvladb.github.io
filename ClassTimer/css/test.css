@@ -209,7 +209,7 @@ textarea {
    /*collapsible data*/
    .collapsible {
      background-color: rgb(191, 191, 191);
-     color: black;
+     color: blue;
      cursor: pointer;
      padding: 0px;
      width: 100%;
@@ -217,11 +217,15 @@ textarea {
      text-align: center;
      outline: none;
      font-size: 20px;
-     position: relative;
-     bottom: -150px;
+     /*position: relative;
+     bottom: -150px;*/
+     position: absolute;
+    bottom: 10%;
+     text-decoration: underline;
    }
 
    .active, .collapsible:hover {
+     color: rgb(0, 0, 225);
      background-color: rgb(191, 191, 191);
    }
 

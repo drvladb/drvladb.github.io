@@ -14,53 +14,33 @@ var x = setInterval(function() {
   today_abs.setSeconds(0);
   today_secs = (todayf.getTime() - today_abs.getTime()) / 1000;
 
+  if (today_secs < 27300){
+    var meta = "School Has Not Started Yet";
+    var countDownDate = new Date(today + " 07:35:00 AM").getTime();
+    var fmeta = "";
+  }
   if (today_secs > 27300 & today_secs < 30540){
     var meta = "First Period"
     var countDownDate = new Date(today + " 08:29:00 AM").getTime();
     var fmeta = "08:29:00 AM";
   }
-if (today_secs > 30540 & today_secs < 30720){
-    var meta = "First to Second Period"
-    var countDownDate = new Date(today + " 08:29:00 AM").getTime();
-    var fmeta = "08:29:00 AM";
-  }
-  if (today_secs > 30720 & today_secs < 33720){
+  if (today_secs > 30540 & today_secs < 33720){
     var meta = "Second Period"
     var countDownDate = new Date(today + " 09:22:00 AM").getTime();
     var fmeta = "09:22:00 AM";
   }
-  if (today_secs > 33720 & today_secs < 33900){
-    var meta = "Second to Third Period"
-    var countDownDate = new Date(today + " 09:22:00 AM").getTime();
-    var fmeta = "09:22:00 AM";
-  }
-  if (today_secs > 33900 & today_secs < 36900){
+  if (today_secs > 33720 & today_secs < 36900){
     var meta = "Third Period"
     var countDownDate = new Date(today + " 10:15:00 AM").getTime();
     var fmeta = "10:15:00 AM";
   }
-  if (today_secs > 36900 & today_secs < 37080){
-    var meta = "Third to Fourth Period"
-    var countDownDate = new Date(today + " 10:15:00 AM").getTime();
-    var fmeta = "10:15:00 AM";
-  }
-  if (today_secs > 37080 & today_secs < 40080){
+  if (today_secs > 36900 & today_secs < 40080){
     var meta = "Fourth Period"
     var countDownDate = new Date(today + " 11:08:00 AM").getTime();
     var fmeta = "11:08:00 AM";
   }
-  if (today_secs > 40080 & today_secs < 40260){
-    var meta = "Fourth to Fifth Period"
-    var countDownDate = new Date(today + " 11:08:00 AM").getTime();
-    var fmeta = "11:08:00 AM";
-  }
-  if (today_secs > 40260 & today_secs < 42660){
+  if (today_secs > 40080 & today_secs < 42660){
     var meta = "Fifth Period (Lunch)"
-    var countDownDate = new Date(today + " 11:51:00 AM").getTime();
-    var fmeta = "11:51:00 AM";
-  }
-  if (today_secs > 42660 & today_secs < 42840){
-    var meta = "Fifth to Sixth Period"
     var countDownDate = new Date(today + " 11:51:00 AM").getTime();
     var fmeta = "11:51:00 AM";
   }
@@ -69,22 +49,12 @@ if (today_secs > 30540 & today_secs < 30720){
     var countDownDate = new Date(today + " 12:44:00 PM").getTime();
     var fmeta = "12:44:00 PM";
   }
-  if (today_secs > 45840 & today_secs < 45840){
-    var meta = "Sixth to Seventh Period"
-    var countDownDate = new Date(today + " 12:44:00 PM").getTime();
-    var fmeta = "12:44:00 PM";
-  }
   if (today_secs > 45840 & today_secs < 49020){
     var meta = "Seventh Period"
     var countDownDate = new Date(today + " 01:37:00 PM").getTime();
     var fmeta = "01:37:00 PM";
   }
-  if (today_secs > 49020 & today_secs < 49200){
-    var meta = "Seventh to Eighth Period"
-    var countDownDate = new Date(today + " 01:37:00 PM").getTime();
-    var fmeta = "01:37:00 PM";
-  }
-  if (today_secs > 49200 & today_secs < 52200){
+  if (today_secs > 49020 & today_secs < 52200){
     var meta = "Eight Period"
     var countDownDate = new Date(today + " 02:30:00 PM").getTime();
     var fmeta = "02:30:00 PM";
@@ -122,7 +92,7 @@ if (today_secs > 30540 & today_secs < 30720){
     document.getElementById("fmeta").innerHTML = "The period ends at " + fmeta;
   }
 
-  // If the count down is over, write some text
+  // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "N/A";
