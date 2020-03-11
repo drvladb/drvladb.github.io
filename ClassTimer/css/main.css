@@ -145,7 +145,7 @@ textarea {
      /*position: fixed;
      bottom: -20px;*/
      transform: translate(0%, 340%);
-   }
+   } /* BUG: Code breaks on on standart computer screans and fons */
 
    .extratext {
      font-size: 20px

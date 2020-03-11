@@ -220,7 +220,7 @@ textarea {
      /*position: relative;
      bottom: -150px;*/
      position: absolute;
-    bottom: 10%;
+     bottom: 10%;
      text-decoration: underline;
    }
 
@@ -236,12 +236,15 @@ textarea {
      overflow: hidden;
      /*position: fixed;
      bottom: -20px;*/
-     transform: translate(0%, 120%);
+     /*transform: translate(0%, 120%);*/
+     position: absolute;
+     bottom: -12%;
    }
 
    .extratext {
      font-size: 20px
    }
+   /* End Auther CTest */
 /*
  * Hide visually and from screen readers
  */

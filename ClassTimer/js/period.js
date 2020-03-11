@@ -4,7 +4,7 @@ var x = setInterval(function() {
   var dd = String(today.getDate()).padStart(2, '0');
   var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
   var yyyy = today.getFullYear();
-  today = mm + '/' + dd + '/' + yyyy;
+  today = mm + '/' + dd + '/' + yyyy; //Amarica, F**k yeah
 
   //time sence start of day
   var todayf = new Date();
@@ -21,8 +21,8 @@ var x = setInterval(function() {
   }
 if (today_secs > 30540 & today_secs < 30720){
     var meta = "First to Second Period"
-    var countDownDate = new Date(today + " 08:29:00 AM").getTime();
-    var fmeta = "08:29:00 AM";
+    var countDownDate = new Date(today + " 08:32:00 AM").getTime();
+    var fmeta = "08:32:00 AM";
   }
   if (today_secs > 30720 & today_secs < 33720){
     var meta = "Second Period"
@@ -31,8 +31,8 @@ if (today_secs > 30540 & today_secs < 30720){
   }
   if (today_secs > 33720 & today_secs < 33900){
     var meta = "Second to Third Period"
-    var countDownDate = new Date(today + " 09:22:00 AM").getTime();
-    var fmeta = "09:22:00 AM";
+    var countDownDate = new Date(today + " 09:25:00 AM").getTime();
+    var fmeta = "09:25:00 AM";
   }
   if (today_secs > 33900 & today_secs < 36900){
     var meta = "Third Period"
@@ -41,8 +41,8 @@ if (today_secs > 30540 & today_secs < 30720){
   }
   if (today_secs > 36900 & today_secs < 37080){
     var meta = "Third to Fourth Period"
-    var countDownDate = new Date(today + " 10:15:00 AM").getTime();
-    var fmeta = "10:15:00 AM";
+    var countDownDate = new Date(today + " 10:18:00 AM").getTime();
+    var fmeta = "10:18:00 AM";
   }
   if (today_secs > 37080 & today_secs < 40080){
     var meta = "Fourth Period"
@@ -51,8 +51,8 @@ if (today_secs > 30540 & today_secs < 30720){
   }
   if (today_secs > 40080 & today_secs < 40260){
     var meta = "Fourth to Fifth Period"
-    var countDownDate = new Date(today + " 11:08:00 AM").getTime();
-    var fmeta = "11:08:00 AM";
+    var countDownDate = new Date(today + " 11:11:00 AM").getTime();
+    var fmeta = "11:11:00 AM";
   }
   if (today_secs > 40260 & today_secs < 42660){
     var meta = "Fifth Period (Lunch)"
@@ -61,8 +61,8 @@ if (today_secs > 30540 & today_secs < 30720){
   }
   if (today_secs > 42660 & today_secs < 42840){
     var meta = "Fifth to Sixth Period"
-    var countDownDate = new Date(today + " 11:51:00 AM").getTime();
-    var fmeta = "11:51:00 AM";
+    var countDownDate = new Date(today + " 11:54:00 AM").getTime();
+    var fmeta = "11:54:00 AM";
   }
   if (today_secs > 42660 & today_secs < 45840){
     var meta = "Sixth Period"
@@ -71,8 +71,8 @@ if (today_secs > 30540 & today_secs < 30720){
   }
   if (today_secs > 45840 & today_secs < 45840){
     var meta = "Sixth to Seventh Period"
-    var countDownDate = new Date(today + " 12:44:00 PM").getTime();
-    var fmeta = "12:44:00 PM";
+    var countDownDate = new Date(today + " 12:47:00 PM").getTime();
+    var fmeta = "12:47:00 PM";
   }
   if (today_secs > 45840 & today_secs < 49020){
     var meta = "Seventh Period"
@@ -81,8 +81,8 @@ if (today_secs > 30540 & today_secs < 30720){
   }
   if (today_secs > 49020 & today_secs < 49200){
     var meta = "Seventh to Eighth Period"
-    var countDownDate = new Date(today + " 01:37:00 PM").getTime();
-    var fmeta = "01:37:00 PM";
+    var countDownDate = new Date(today + " 01:40:00 PM").getTime();
+    var fmeta = "01:40:00 PM";
   }
   if (today_secs > 49200 & today_secs < 52200){
     var meta = "Eight Period"
@@ -146,7 +146,8 @@ for (i = 0; i < coll.length; i++) {
 }
 
 //Detect Phones
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  var url= "mobile/period.html"
-  window.location = url;
-}
+//Fix Redirect patch
+//if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  //var url= "mobile/period.html"
+  //window.location = url;
+//}
