@@ -218,7 +218,7 @@ add_mark("Full URLs", fullUrls)
 
 //===================
 add_label("Updates");
-add_mark("Bookmarklets", "https://drvladb.github.io/panel/bookmarklets.html");
+add_mark("Bookmarklets", "https://caiorss.github.io/bookmarklets.html");
 
 add_mark("Close", remove_panel)
 
